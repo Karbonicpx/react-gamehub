@@ -1,0 +1,32 @@
+/* Reset para garantir que não há conflitos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+
+.filters-container {
+    width: 250px;
+    min-height: calc(100vh - 80px);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    top: auto;
+    position: sticky;
+    align-self: stretch;
+    flex-shrink: 0;
+}
+
+.card-grid {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}

@@ -1,0 +1,241 @@
+/* GameCard.css */
+
+.card-container {
+    position: relative;
+    width: 280px;
+    height: 380px;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Animação de hover principal */
+.card-container:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(64, 156, 255, 0.3);
+}
+
+/* Efeito de brilho na borda ao hover */
+.card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(45deg, 
+        rgba(64, 156, 255, 0) 0%,
+        rgba(64, 156, 255, 0.4) 50%,
+        rgba(64, 156, 255, 0) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card-container:hover::before {
+    animation: border-glow 2s linear infinite;
+    opacity: 1;
+}
+
+@keyframes border-glow {
+    0% {
+        background-position: -100px 0;
+    }
+    100% {
+        background-position: 100px 0;
+    }
+}
+
+/* Imagem do jogo */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-position: center 20%;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.card-container:hover .card-image {
+    height: 160px;
+    filter: brightness(1) contrast(1.2);
+    transform: scale(1.05);
+}
+
+/* Conteúdo do card */
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Título */
+.card-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #4da6ff, #0066cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container:hover .card-title {
+    background: linear-gradient(90deg, #66ccff, #0099ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: scale(1.05);
+}
+
+/* Descrição */
+.card-description {
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    background-color: #003366;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    transition: all 0.3s ease;
+}
+
+.card-container:hover .card-description {
+    color: #d0d0d0;
+    -webkit-line-clamp: 4;
+}
+
+/* Avaliação com estrelas */
+.card-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-container:hover .card-stars {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: rgba(64, 156, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Estrelas individuais */
+.star {
+    font-size: 1.2rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.star.filled {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: star-pulse 1.5s infinite alternate;
+}
+
+@keyframes star-pulse {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+    100% {
+        transform: scale(1.2);
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    }
+}
+
+/* Badge do console */
+.card-console {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 102, 204, 0.9);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    animation: badge-bounce 2s infinite;
+}
+
+@keyframes badge-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Botão de ação (opcional) */
+.card-action {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: linear-gradient(90deg, #0066cc, #003366);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.card-container:hover .card-action {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* Efeito de clique */
+.card-container:active {
+    transform: translateY(-5px) scale(0.98);
+    transition: all 0.1s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .card-container:hover {
+        transform: translateY(-5px) scale(1.02);
+    }
+}

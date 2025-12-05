@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "title": "Super Mario Bros",
+    "description": "Mustachioed plumber Mario must rescue Princess Peach from the villain Bowser, navigating through the dangerous and secret-filled Mushroom Kingdom.",
+    "imgSrc": "images/Super Mario Bros.jpg",
+    "stars": 5,
+    "console": "NES"
+  },
+  {
+    "id": 2,
+    "title": "The Legend of Zelda",
+    "description": "Young hero Link must rescue Princess Zelda and recover the Triforce pieces from the evil Ganon, exploring dungeons and solving puzzles.",
+    "imgSrc": "images/The Legend of Zelda.jpg",
+    "console": "NES"
+  },
+  {
+    "id": 3,
+    "title": "Metroid",
+    "description": "Bounty hunter Samus Aran explores planet Zebes to destroy the dangerous Metroids and face the space pirates' leader, Mother Brain.",
+    "imgSrc": "images/Metroid.jpg",
+    "stars": 4,
+    "console": "NES"
+  },
+  {
+    "id": 4,
+    "title": "Mega Man 2",
+    "description": "Robot Mega Man must defeat the eight Robot Masters created by Dr. Wily, acquiring their special abilities to save the world.",
+    "imgSrc": "images/Megaman 2.jpg",
+    "stars": 5,
+    "console": "NES"
+  },
+  {
+    "id": 5,
+    "title": "Castlevania",
+    "description": "Simon Belmont, a member of the vampire-hunting clan, invades Count Dracula's castle to defeat the lord of darkness and his army of monsters.",
+    "imgSrc": "images/Castlevania.jpg",
+    "stars": 4,
+    "console": "NES"
+  },
+  {
+    "id": 6,
+    "title": "Donkey Kong",
+    "description": "Mario (called Jumpman) must climb structures to rescue his girlfriend Pauline from the hands of the gorilla Donkey Kong.",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/pt/1/1a/Donkey_Kong_NES.png",
+    "stars": 4,
+    "console": "NES"
+  },
+  {
+    "id": 7,
+    "title": "Contra",
+    "description": "Two elite soldiers, Bill Rizer and Lance Bean, infiltrate the alien Red Falcon base to save Earth from an extraterrestrial invasion.",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/pt/6/6d/Contra_NES.jpg",
+    "stars": 5,
+    "console": "NES"
+  },
+  {
+    "id": 8,
+    "title": "Final Fantasy",
+    "description": "Four Warriors of Light embark on a journey to restore the power of the four elemental crystals and save the world from darkness.",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/pt/0/0a/Final_Fantasy_NES.jpg",
+    "stars": 4,
+    "console": "NES"
+  },
+  {
+    "id": 9,
+    "title": "Kirby's Adventure",
+    "description": "Kirby, a cute pink ball, sets out on an adventure to recover the pieces of the Star Rod and save Dream Land from King Dedede.",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/pt/b/be/Kirby%27s_Adventure_capa.png",
+    "stars": 5,
+    "console": "NES"
+  },
+  {
+    "id": 10,
+    "title": "Teenage Mutant Ninja Turtles",
+    "description": "The Ninja Turtles - Leonardo, Donatello, Michelangelo, and Raphael - fight against the Foot Clan and Shredder to rescue their master Splinter.",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/pt/7/7a/TMNT_NES.jpg",
+    "stars": 3,
+    "console": "NES"
+  }
+  ]
