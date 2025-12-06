@@ -2,18 +2,18 @@ import { Header } from "../components/Header"
 import { GameFilters } from "../components/home/GameFilters"
 import { GameCardsGrid } from "../components/home/GameCardsGrid";
 import { useState, useEffect } from "react"
-import type { GameCardProps } from "../components/home/GameCard";
+import type { GameProps } from "../components/utilities/interfaces";
 import "./HomePage.css"
 
 export function HomePage() {
 
-    const [gamesArray, setGamesArray] = useState<GameCardProps[]>([]);
+    const [gamesArray, setGamesArray] = useState<GameProps[]>([]);
 
+    // Fetching value from games.json only one time 
     useEffect(() => {
         fetch("/games.json")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 setGamesArray(data);
             })
     }, []);
@@ -26,7 +26,7 @@ export function HomePage() {
             <div className="home-container">
                 <Header/>
                 <div className="filters-container">
-                    <GameFilters />
+                    <GameFilters cardsArray={gamesArray} />
                 </div>
 
                 <div className="card-grid">

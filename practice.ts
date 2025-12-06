@@ -52,3 +52,58 @@ export type MutationFunction = (v: number) => number;
 
 const myNewMutateFunc: MutationFunction = (v: number) => v * 100;
 export default addNumbers(1, 2)
+
+
+// This function uses keyof, and what it means is that for any dataType that server as the argument for items, the key property can only holds the properties of that datatype
+function pluck<DataType, KeyType extends keyof DataType>(
+    items: DataType[],
+    key: KeyType
+): DataType[KeyType][] {
+    return items.map((item) => item[key])
+}
+
+const dogs = [
+    { name: "Mimi", age: 12},
+    { name: "Gg", age: 11}
+]
+
+
+// Here, you can only select "age" or "name", since these are the values for dogs array
+console.log(pluck(dogs, "age"))
+console.log(pluck(dogs, "name"))
+
+
+interface MyUser{
+    readonly name: string // Makes the name immutable
+    age: number
+    email: string
+}
+
+// This is basically making every property in myUser optional
+type OptUser = Partial<MyUser>
+
+// Making all properties required
+type RequiredUser = Required<MyUser>
+
+// Basically only "picks" the keys in MyUser that you use as arguments here (in this case, only name and email)
+type NameEmailUser = Pick<MyUser, "name" | "email">
+
+// Oposite of Pick, removes the key
+type NameAgeUser = Omit<MyUser, "email">
+
+// Makes the whole type immutable
+type ReadonlyUser = Readonly<MyUser>
+
+// Both the array and its contents are const
+const reallyConst = [1, 2, 3] as const;
+
+
+// Instead of making 3 separate related strings, we can set the states in an enum
+enum loadingState {
+    before = "before",
+    loading = "loading",
+    complete = "complete"
+}
+
+
+

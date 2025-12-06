@@ -12,6 +12,7 @@ export function Header() {
                 <h1 id = "logo-text">React GameHub</h1>
             </div>
             <div className="header-search">
+                <img className ="search-icon" src="images/Search Icon.png" alt="Search Icon"></img>
                 <input className="search-input" placeholder="Search for a game..."></input>
             </div>
             <div className="header-links">

@@ -1,5 +1,3 @@
-/* GameCard.css */
-
 .card-container {
     position: relative;
     width: 280px;
@@ -15,14 +13,54 @@
     flex-direction: column;
 }
 
-/* Animação de hover principal */
+/* Card entry animation */
+.card-container {
+    animation: card-entry 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+}
+
+@keyframes card-entry {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.9);
+        filter: blur(5px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px) scale(1.02);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Stagger delay for each card in a grid */
+.card-container:nth-child(1) { animation-delay: 0.1s; }
+.card-container:nth-child(2) { animation-delay: 0.15s; }
+.card-container:nth-child(3) { animation-delay: 0.2s; }
+.card-container:nth-child(4) { animation-delay: 0.25s; }
+.card-container:nth-child(5) { animation-delay: 0.3s; }
+.card-container:nth-child(6) { animation-delay: 0.35s; }
+.card-container:nth-child(7) { animation-delay: 0.4s; }
+.card-container:nth-child(8) { animation-delay: 0.45s; }
+.card-container:nth-child(9) { animation-delay: 0.5s; }
+.card-container:nth-child(10) { animation-delay: 0.55s; }
+.card-container:nth-child(11) { animation-delay: 0.6s; }
+.card-container:nth-child(12) { animation-delay: 0.65s; }
+
+
+/* Main hover animation */
 .card-container:hover {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
                 0 0 20px rgba(64, 156, 255, 0.3);
 }
 
-/* Efeito de brilho na borda ao hover */
+/* Border glow effect on hover */
 .card-container::before {
     content: '';
     position: absolute;
@@ -57,7 +95,7 @@
     }
 }
 
-/* Imagem do jogo */
+/* Game image */
 .card-image {
     width: 100%;
     height: 200px;
@@ -74,7 +112,7 @@
     transform: scale(1.05);
 }
 
-/* Conteúdo do card */
+/* Card content */
 .card-content {
     padding: 20px;
     flex-grow: 1;
@@ -83,10 +121,10 @@
     background: rgba(0, 0, 0, 0.4);
 }
 
-/* Título */
+/* Title */
 .card-title {
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0 0 12px 0;
     text-align: center;
@@ -109,7 +147,7 @@
     transform: scale(1.05);
 }
 
-/* Descrição */
+/* Description */
 .card-description {
     color: #ffffff;
     font-size: 0.9rem;
@@ -121,6 +159,7 @@
     display: -webkit-box;
     background-color: #003366;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     transition: all 0.3s ease;
 }
@@ -128,9 +167,10 @@
 .card-container:hover .card-description {
     color: #d0d0d0;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
 }
 
-/* Avaliação com estrelas */
+/* Star rating */
 .card-stars {
     display: flex;
     align-items: center;
@@ -150,7 +190,7 @@
     transform: translateY(-2px);
 }
 
-/* Estrelas individuais */
+/* Individual stars */
 .star {
     font-size: 1.2rem;
     color: #333;
@@ -174,7 +214,7 @@
     }
 }
 
-/* Badge do console */
+/* Console badge */
 .card-console {
     position: absolute;
     top: 15px;
@@ -199,7 +239,7 @@
     }
 }
 
-/* Botão de ação (opcional) */
+/* Action button */
 .card-action {
     position: absolute;
     bottom: -50px;
@@ -221,13 +261,13 @@
     opacity: 1;
 }
 
-/* Efeito de clique */
+/* Click effect */
 .card-container:active {
     transform: translateY(-5px) scale(0.98);
     transition: all 0.1s ease;
 }
 
-/* Responsividade */
+/* Responsive design */
 @media (max-width: 768px) {
     .card-container {
         width: 100%;
@@ -238,4 +278,9 @@
     .card-container:hover {
         transform: translateY(-5px) scale(1.02);
     }
+}
+
+.star-img{
+    width: 20px;
+    height: 20px;
 }

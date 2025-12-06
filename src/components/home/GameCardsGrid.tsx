@@ -1,12 +1,8 @@
 import { GameCard } from "./GameCard"
-import type { GameCardProps } from "./GameCard"
+import type { GameProps } from "../utilities/interfaces"
 
-// Interface para o array de cards
-interface GameCardArray {
-    cardsArray: GameCardProps[]
-}
 
-export function GameCardsGrid({ cardsArray }: GameCardArray) {
+export function GameCardsGrid({ cardsArray }: { cardsArray: GameProps[] }) {
     return (
         <>
             {/* Transform the array into components (needs to check if the array exists)|*/}
@@ -17,6 +13,7 @@ export function GameCardsGrid({ cardsArray }: GameCardArray) {
                     description={card.description}
                     imgSrc={card.imgSrc}
                     stars={card.stars}
+                    console={card.console}
                 />
             ))}
         </>
