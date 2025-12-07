@@ -6,7 +6,7 @@ import type { GameProps } from "../utilities/interfaces";
 // GameCard component, which will display in the main page to be chosen by the player
 export function GameCard( {title, imgSrc, description, stars, console}: GameProps ){
 
-    // This function will generate a star component. If it is empty or full, is defined by the isEmpty parameter
+    // This function will generate a star component. If it is empty or full, the isEmpty parameter will define it
     function createStar(k: number, isEmpty: boolean){
         return (<img key={k} className="star-img" src={isEmpty ? "images/Empty Star.png" : "images/Full Star.png"} alt="Star"/>)
     }
@@ -25,7 +25,7 @@ export function GameCard( {title, imgSrc, description, stars, console}: GameProp
     }
 
     return(
-        <div className="card-container">
+        <div className="card-container" >
             <h1 className="card-title"> {title + " - " + console} </h1>
             <img className="card-image" src={imgSrc} alt="Game Image"></img>
             <p className="card-description">{description}</p>

@@ -13,7 +13,7 @@
     "description": "Young hero Link must rescue Princess Zelda and recover the Triforce pieces from the evil Ganon, exploring dungeons and solving puzzles.",
     "imgSrc": "images/covers/The Legend of Zelda.jpg",
     "stars": 5,
-    "console": "NES"
+    "console": "SNES"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "description": "Robot Mega Man must defeat the eight Robot Masters created by Dr. Wily, acquiring their special abilities to save the world.",
     "imgSrc": "images/covers/Megaman 2.jpg",
     "stars": 5,
-    "console": "NES"
+    "console": "SNES"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Simon Belmont, a member of the vampire-hunting clan, invades Count Dracula's castle to defeat the lord of darkness and his army of monsters.",
     "imgSrc": "images/covers/Castlevania.jpg",
     "stars": 4,
-    "console": "NES"
+    "console": "SNES"
   },
   {
     "id": 6,

@@ -18,7 +18,7 @@ export function Header() {
             <div className="header-links">
                 <a>About</a>
                 <a>FAQ</a>
-                <a>Games</a>
+                <a href="./">Games</a>
             </div>
         </div>
     )

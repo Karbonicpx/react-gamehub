@@ -1,7 +1,15 @@
 
 import "./GameFilters.css"
 import type { GameProps } from "../utilities/interfaces"
-export function GameFilters({ cardsArray }: { cardsArray: GameProps[] }) {
+
+export function GameFilters({ cardsArray, onConsoleFilterChange }:
+    {   
+        // Array that will hold all the gameCards with the GameProps
+        cardsArray: GameProps[], 
+
+        // Function that will handle the filters (we need to pass the parameters and the return type)
+        onConsoleFilterChange: (console: string, checked: boolean) => void
+    }) {
 
     // Empty string which will hold all the unique console values from the gameCards array
     const uniqueConsoles: string[] = []
@@ -19,7 +27,16 @@ export function GameFilters({ cardsArray }: { cardsArray: GameProps[] }) {
         <div className="filters-list">
             {uniqueConsoles.map(console => (
                 <label key={console} className="checkbox-filters">
-                    <input type="checkbox" title={console} value={console} />
+                    <input
+                        type="checkbox"
+                        title={console}
+                        value={console}
+                        onChange={(checkbox) => {
+
+                            // When the checkbox is checked, add the console value that it holds, and set the bool to true/false 
+                            onConsoleFilterChange(console, checkbox.target.checked)
+                        }}
+                    />
                     {console}
                 </label>
             ))}
