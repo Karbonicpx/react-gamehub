@@ -1,6 +1,6 @@
 
 import "./GameFilters.css"
-import type { GameProps } from "../utilities/interfaces"
+import type { GameProps } from "../../types/interfaces"
 
 export function GameFilters({ cardsArray, onConsoleFilterChange }:
     {   

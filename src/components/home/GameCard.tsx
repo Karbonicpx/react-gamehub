@@ -1,10 +1,10 @@
 
 import "./GameCard.css"
-import type { GameProps } from "../utilities/interfaces";
+import type { GameProps } from "../../types/interfaces";
 // Creating a interface so we can assign a type the props of the GameCard component
 
 // GameCard component, which will display in the main page to be chosen by the player
-export function GameCard( {title, imgSrc, description, stars, console}: GameProps ){
+export function GameCard( {title, imgSrc, description, stars, console, romPath, onPlay}: GameProps ){
 
     // This function will generate a star component. If it is empty or full, the isEmpty parameter will define it
     function createStar(k: number, isEmpty: boolean){
@@ -24,8 +24,13 @@ export function GameCard( {title, imgSrc, description, stars, console}: GameProp
         );
     }
 
+    // Plays the rom in the romPath
+    function playROM(){
+        onPlay(romPath);
+    }
+
     return(
-        <div className="card-container" >
+        <div className="card-container" onClick={playROM}>
             <h1 className="card-title"> {title + " - " + console} </h1>
             <img className="card-image" src={imgSrc} alt="Game Image"></img>
             <p className="card-description">{description}</p>

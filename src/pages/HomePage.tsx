@@ -2,8 +2,7 @@ import { Header } from "../components/Header"
 import { GameFilters } from "../components/home/GameFilters"
 import { GameCardsGrid } from "../components/home/GameCardsGrid";
 import { useState, useEffect } from "react"
-// import type { Filters } from "../components/utilities/interfaces";
-import type { GameProps } from "../components/utilities/interfaces";
+import type { GameProps } from "../types/interfaces";
 import "./HomePage.css"
 
 
@@ -17,13 +16,13 @@ export function HomePage() {
 
 
 
+
     function handleConsoleFilter(console: string, isChecked: boolean) {
         setConsoleFilters(isChecked
             ? [...consoleFilters, console] // This means that the consoleFilters is adding the new console to the existing array (spread operator)
             : consoleFilters.filter(c => c !== console)
         );
     }
-
     // Fetching value from games.json only one time 
     useEffect(() => {
         fetch("/games.json")
@@ -51,7 +50,7 @@ export function HomePage() {
 
                 <div className="card-grid">
                     {/* Sorting by console */}
-                    <GameCardsGrid cardsArray={filteredGamesArray.sort((a, b) => a.console.localeCompare(b.console))} />
+                    <GameCardsGrid cardsArray={filteredGamesArray.sort((a, b) => a.console.localeCompare(b.console))} onPlay={() => {}} />
                 </div>
             </div>
 

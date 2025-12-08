@@ -1,8 +1,8 @@
 import { GameCard } from "./GameCard"
-import type { GameProps } from "../utilities/interfaces"
+import type { GameProps } from "../../types/interfaces"
 
 
-export function GameCardsGrid({ cardsArray}: { cardsArray: GameProps[]}) {
+export function GameCardsGrid({ cardsArray, onPlay}: { cardsArray: GameProps[], onPlay: (rom: string) => void}) {
     return (
         <>
             {/* Transform the array into components (needs to check if the array exists)|*/}
@@ -15,6 +15,8 @@ export function GameCardsGrid({ cardsArray}: { cardsArray: GameProps[]}) {
                     imgSrc={card.imgSrc}
                     stars={card.stars}
                     console={card.console}
+                    romPath={card.romPath}
+                    onPlay={onPlay}
                 />
             ))}
         </>
