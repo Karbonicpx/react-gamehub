@@ -6,7 +6,7 @@
     "imgSrc": "images/covers/Super Mario Bros.jpg",
     "stars": 5,
     "console": "NES",
-    "romPath": "public/roms/Super Mario Bros.nes"
+    "romURL": "https://playretrogames.online/game/play/play-super-mario-bros/"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "description": "Young hero Link must rescue Princess Zelda and recover the Triforce pieces from the evil Ganon, exploring dungeons and solving puzzles.",
     "imgSrc": "images/covers/The Legend of Zelda.jpg",
     "stars": 5,
-    "console": "SNES",
-    "romPath": "roms/The Legend of Zelda.nes"
+    "console": "NES",
+    "romURL": "https://playretrogames.online/game/play/play-the-legend-of-zelda/"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "imgSrc": "images/covers/Metroid.jpg",
     "stars": 4,
     "console": "NES",
-    "romPath": "roms/Metroid.nes"
+    "romURL": "https://playretrogames.online/game/play/metroid/"
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "description": "Robot Mega Man must defeat the eight Robot Masters created by Dr. Wily, acquiring their special abilities to save the world.",
     "imgSrc": "images/covers/Megaman 2.jpg",
     "stars": 5,
-    "console": "SNES",
-    "romPath": "roms/Mega Man 2.nes"
+    "console": "NES",
+    "romURL": "https://playretrogames.online/game/play/play-mega-man-2/"
   },
   {
     "id": 5,
@@ -41,8 +41,8 @@
     "description": "Simon Belmont, a member of the vampire-hunting clan, invades Count Dracula's castle to defeat the lord of darkness and his army of monsters.",
     "imgSrc": "images/covers/Castlevania.jpg",
     "stars": 4,
-    "console": "SNES",
-    "romPath": "roms/Castlevania.nes"
+    "console": "NES",
+    "romURL": "https://playretrogames.online/game/play/castlevania/"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "imgSrc": "images/covers/Donkey Kong.jpg",
     "stars": 4,
     "console": "NES",
-    "romPath": "roms/Donkey Kong.nes"
+    "romURL": "https://playretrogames.online/game/play/play-donkey-kong-nes/"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "imgSrc": "images/covers/Contra.jpg",
     "stars": 5,
     "console": "NES",
-    "romPath": "roms/Contra.nes"
+    "romURL": "https://playretrogames.online/game/play/play-contra-nes/"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "imgSrc": "images/covers/Final Fantasy.jpg",
     "stars": 4,
     "console": "NES",
-    "romPath": "roms/Final Fantasy.nes"
+    "romURL": "https://playretrogames.online/game/show/play-final-fantasy/"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "imgSrc": "images/covers/Kirby's Adventure.jpg",
     "stars": 5,
     "console": "NES",
-    "romPath": "roms/Kirby's Adventure.nes"
+    "romURL": "https://playretrogames.online/game/play/play-kirbys-adventure/"
   },
   {
     "id": 10,
@@ -87,6 +87,142 @@
     "imgSrc": "images/covers/TMNT.jpg",
     "stars": 3,
     "console": "NES",
-    "romPath": "roms/Teenage Mutant Ninja Turtles.nes"
+    "romURL": "https://playretrogames.online/game/play/play-teenage-mutant-ninja-turtles/"
+  },
+
+  {
+    "id": 11,
+    "title": "Super Mario World",
+    "description": "Mario and Luigi travel to Dinosaur Land to rescue Princess Peach from Bowser and his Koopalings, introducing Yoshi as a new companion.",
+    "imgSrc": "images/covers/Super Mario World.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/super-mario-world/"
+  },
+  {
+    "id": 12,
+    "title": "The Legend of Zelda - A Link to the Past",
+    "description": "Link must rescue Princess Zelda and defeat Ganon by traveling between the Light World and Dark World to save Hyrule.",
+    "imgSrc": "images/covers/The Legend of Zelda - A Link to the Past.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-legend-of-zelda-link-to-the-past/"
+  },
+  {
+    "id": 13,
+    "title": "Super Metroid",
+    "description": "Samus Aran returns to planet Zebes to investigate the theft of the last Metroid, facing new threats and exploring a massive interconnected world.",
+    "imgSrc": "images/covers/Super Metroid.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-super-metroid/"
+  },
+  {
+    "id": 14,
+    "title": "Chrono Trigger",
+    "description": "A group of adventurers travel through time to prevent a global catastrophe, featuring multiple endings and an innovative combat system.",
+    "imgSrc": "images/covers/Chrono Trigger.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-chrono-trigger/"
+  },
+  {
+    "id": 15,
+    "title": "Super Mario Kart",
+    "description": "The first installment of the Mario Kart series featuring characters from the Mario universe racing in go-karts with power-up items.",
+    "imgSrc": "images/covers/Super Mario Kart.jpg",
+    "stars": 4,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-super-mario-kart/"
+  },
+  {
+    "id": 16,
+    "title": "Donkey Kong Country",
+    "description": "Donkey Kong and Diddy Kong must recover their stolen banana hoard from King K. Rool and the Kremlings in this revolutionary platformer.",
+    "imgSrc": "images/covers/Donkey Kong Country.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-donkey-kong-country/"
+  },
+  {
+    "id": 17,
+    "title": "Street Fighter II",
+    "description": "The revolutionary fighting game where players choose from various martial artists to compete in a worldwide fighting tournament.",
+    "imgSrc": "images/covers/Street Fighter II.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-street-fighter-ii/"
+  },
+  {
+    "id": 18,
+    "title": "Final Fantasy II",
+    "description": "A diverse group of rebels fight against the Gestahlian Empire in a steampunk fantasy world threatened by the mad clown Kefka.",
+    "imgSrc": "images/covers/Final Fantasy II.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-final-fantasy-ii/"
+  },
+  {
+    "id": 19,
+    "title": "Super Castlevania IV",
+    "description": "Simon Belmont returns with enhanced whip mechanics to battle Dracula once more through haunting castles and treacherous landscapes.",
+    "imgSrc": "images/covers/Super Castlevania IV.jpg",
+    "stars": 4,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-super-castlevania-snes/"
+  },
+  {
+    "id": 20,
+    "title": "Super Mario RPG: Legend of the Seven Stars",
+    "description": "Mario teams up with new allies in a turn-based RPG adventure to repair the Star Road and defeat the evil Smithy Gang.",
+    "imgSrc": "images/covers/Super Mario RPG.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-super-mario-rpg-snes/"
+  },
+  {
+    "id": 21,
+    "title": "Kirby's Dream Land 3",
+    "description": "A mysterious dark cloud begins to loom over the sky, breaking Popstar's rings in the process and reaching over the distant corners of the world. Coo quickly tells Kirby that Popstar is in trouble, and they soon set off to protect the world once again.",
+    "imgSrc": "images/covers/Kirby's Dream Land 3.jpg",
+    "stars": 4,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-kirbys-dream-land-3/"
+  },
+  {
+    "id": 22,
+    "title": "EarthBound",
+    "description": "A young boy named Ness embarks on a surreal adventure across America to collect melodies and stop an alien invasion.",
+    "imgSrc": "images/covers/EarthBound.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-earthbound/"
+  },
+  {
+    "id": 23,
+    "title": "Starwing 2",
+    "description": "Fox McCloud leads a team of anthropomorphic animal pilots in arwing spacecraft to defend the Lylat system from Andross.",
+    "imgSrc": "images/covers/Star Fox.jpg",
+    "stars": 4,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-starwing2-snes/"
+  },
+  {
+    "id": 24,
+    "title": "Mega Man X",
+    "description": "A new era of Mega Man begins as X, a advanced reploid, battles against maverick reploids led by the sinister Sigma.",
+    "imgSrc": "images/covers/Mega Man X.jpg",
+    "stars": 5,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-mega-man-x/"
+  },
+  {
+    "id": 25,
+    "title": "F-Zero",
+    "description": "High-speed anti-gravity racing in the year 2560 where pilots compete in the deadly F-Zero Grand Prix for fame and fortune.",
+    "imgSrc": "images/covers/F-Zero.jpg",
+    "stars": 4,
+    "console": "SNES",
+    "romURL": "https://playretrogames.online/game/play/play-f-zero/"
   }
 ]

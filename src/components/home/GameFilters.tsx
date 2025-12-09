@@ -2,13 +2,15 @@
 import "./GameFilters.css"
 import type { GameProps } from "../../types/interfaces"
 
-export function GameFilters({ cardsArray, onConsoleFilterChange }:
+export function GameFilters({ cardsArray, onConsoleFilterChange}:
     {   
         // Array that will hold all the gameCards with the GameProps
         cardsArray: GameProps[], 
 
         // Function that will handle the filters (we need to pass the parameters and the return type)
         onConsoleFilterChange: (console: string, checked: boolean) => void
+
+        // Array of IDs of the cards that will be applied exit animation
     }) {
 
     // Empty string which will hold all the unique console values from the gameCards array

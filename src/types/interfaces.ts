@@ -10,7 +10,8 @@ export interface GameProps {
     description: string;
     stars: number;
     console: string;
-    romPath: string;
-     onPlay: (rom: string) => void; // Function to "activate" the emulator when the user clicks a card
+    romURL: string;
+    onPlay: (rom: string) => void; // Function to "activate" the emulator when the user clicks a card
+    isExiting: boolean
 }
 
