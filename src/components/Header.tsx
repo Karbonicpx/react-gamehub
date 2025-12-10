@@ -17,8 +17,7 @@ export function Header({ onGameSearch }: { onGameSearch: (value: string) => void
                 }}></input>
             </div>
             <div className="header-links">
-                <a>About</a>
-                <a>FAQ</a>
+                <a href="./about">About</a>
                 <a href="./">Games</a>
             </div>
         </div>

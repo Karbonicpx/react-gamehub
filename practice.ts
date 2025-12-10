@@ -105,5 +105,22 @@ enum loadingState {
     complete = "complete"
 }
 
+interface Database {
+    get(id: string): string;
+    set(id: string, value: string): void
+
+}
+
+// Interface we define the methods and attributes, and in the class we define them
+class InMemoryDatabase implements Database{
+    private db: Record<string, string> = {};
+    get(id: string): string {
+        return this.db[id]
+     };
+    set(id: string, value: string): void {
+        this.db[id] = value
+    }
+}
+
 
 

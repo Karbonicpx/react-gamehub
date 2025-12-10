@@ -224,5 +224,68 @@
     "stars": 4,
     "console": "SNES",
     "romURL": "https://playretrogames.online/game/play/play-f-zero/"
+  },
+  {
+  "id": 26,
+    "title": "Alex Kidd in Miracle World",
+    "description": "The iconic adventure of Alex Kidd as he uses his punching skills and vehicles to rescue his brother and defeat Janken the Great. The game was built into many Master System consoles[citation:2][citation:6].",
+    "imgSrc": "images/covers/Alex Kidd.jpg",
+    "stars": 5,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-alex-kidd-in-miracle-world/"
+  },
+  {
+    "id": 27,
+    "title": "Phantasy Star",
+    "description": "A pioneering sci-fi RPG where Alis sets out to avenge her brother's death and overthrow the tyrannical King Lassic across three planets[citation:1][citation:4].",
+    "imgSrc": "images/covers/Phantasy Star.jpg",
+    "stars": 5,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-phantasy-star-sega-master-system/"
+  },
+  {
+    "id": 28,
+    "title": "Sonic The Hedgehog",
+    "description": "The 8-bit debut of Sonic the Hedgehog, featuring unique level designs as he speeds through zones to stop Dr. Robotnik's plans[citation:6][citation:7].",
+    "imgSrc": "images/covers/Sonic The Hedgehog.jpg",
+    "stars": 4,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-sonic/"
+  },
+  {
+    "id": 29,
+    "title": "Sonic The Hedgehog 2",
+    "description": "A faster-paced sequel introducing Tails as a playable character, where Sonic races to stop Dr. Robotnik's latest scheme[citation:6].",
+    "imgSrc": "images/covers/Sonic The Hedgehog 2.jpg",
+    "stars": 4,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-sonic-2/"
+  },
+  {
+    "id": 30,
+    "title": "Golden Axe Warrior",
+    "description": "An action RPG with top-down Zelda-style gameplay. Embark on a quest to defeat the evil Death Adder and recover the legendary Golden Axe[citation:1][citation:6].",
+    "imgSrc": "images/covers/Golden Axe Warrior.jpg",
+    "stars": 4,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-golden-axe-warrior-sms/"
+  },
+  {
+    "id": 32,
+    "title": "Shinobi",
+    "description": "The 8-bit adaptation of the legendary ninja game. As Joe Musashi, rescue kidnapped children using shurikens and ninjutsu across varied missions[citation:1][citation:6].",
+    "imgSrc": "images/covers/Shinobi.jpg",
+    "stars": 4,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-shinobi-sega-master-system/"
+  },
+  {
+    "id": 33,
+    "title": "Wonder Boy III: The Dragon's Trap",
+    "description": "An adventure where a hero cursed to live as a lizard-man must find a cure by exploring a vast world and defeating other cursed creatures[citation:1][citation:2].",
+    "imgSrc": "images/covers/Wonder Boy.jpg",
+    "stars": 5,
+    "console": "Master System",
+    "romURL": "https://playretrogames.online/game/play/play-wonder-boy-iii-the-dragons-trap/"
   }
 ]
