@@ -1,75 +1,78 @@
-# React + TypeScript + Vite
+# 🎮 React GameHub — Retro Game Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <strong>A modern, interactive retro game library built with React + TypeScript</strong><br>
+  Explore classic games with real-time filtering, animated transitions, and a sleek responsive design.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## React Compiler
+### Home Page (Desktop)
+<div align="center">
+  <img width="800" src="https://github.com/user-attachments/assets/9f97aa57-cd78-4c3f-9c12-0dd5591f1b0d" alt="Desktop Homepage">
+  <p><em>Main game library with console filters and search bar</em></p>
+</div>
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Home Page (Mobile)
+<div align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/f19fe571-8fdd-4134-bd0e-35fc5188b2a6" alt="Mobile View">
+  <p><em>Responsive design with collapsible filters and hamburguer icon with navigation menu </em></p>
+</div>
 
-Note: This will impact Vite dev & build performances.
+### About Page (Desktop)
+<div align="center">
+  <img width="800" src="https://github.com/user-attachments/assets/b3ea65c3-2e44-4710-8dca-247764e0170c" alt="About Page">
+  <p><em>Project documentation with smooth navigation</em></p>
+</div>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### About Page (Mobile)
+<div align="center">
+  <img width="363" height="652" alt="image" src="https://github.com/user-attachments/assets/9ffe7958-67f4-4283-875e-0f8778e6b454" />
+  <p><em> Responsive design </em></p>
+</div>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Technologies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React 18** - Frontend library
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Build tool and dev server
+- **React Router DOM** - Page navigation
+- **CSS Modules** - Scoped styling
+- **Fetch API** - Data loading
+- **CSS Animations** - Visual effects
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+- Node.js 16+ and npm/yarn/pnpm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/react-gamehub.git
+cd react-gamehub
+
+# Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+# Start development server
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
