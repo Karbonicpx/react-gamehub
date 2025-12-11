@@ -120,6 +120,52 @@
     }
 }
 
+/* Mobile Filters Button */
+.mobile-filter-button {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 10px 20px;
+    background: rgba(64,156,255,0.3);
+    border: 1px solid rgba(64,156,255,0.5);
+    border-radius: 12px;
+    color: white;
+    z-index: 50;
+
+    backdrop-filter: blur(10px);
+}
+
+/* Only on mobile */
+@media (max-width: 768px) {
+    .mobile-filter-button {
+        display: block;
+    }
+
+    .filters-container {
+        position: fixed;
+        left: 0;
+        top: 140px;
+
+        width: 100%;
+        height: calc(100vh - 140px);
+        z-index: 90;
+    }
+
+    .home-container {
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    /* Show one card per row */
+    .card-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+}
+
 .card-grid {
     flex: 1;
     padding: 20px;

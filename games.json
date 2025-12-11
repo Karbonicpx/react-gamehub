@@ -228,7 +228,7 @@
   {
   "id": 26,
     "title": "Alex Kidd in Miracle World",
-    "description": "The iconic adventure of Alex Kidd as he uses his punching skills and vehicles to rescue his brother and defeat Janken the Great. The game was built into many Master System consoles[citation:2][citation:6].",
+    "description": "The iconic adventure of Alex Kidd as he uses his punching skills and vehicles to rescue his brother and defeat Janken the Great. The game was built into many Master System consoles",
     "imgSrc": "images/covers/Alex Kidd.jpg",
     "stars": 5,
     "console": "Master System",
@@ -237,7 +237,7 @@
   {
     "id": 27,
     "title": "Phantasy Star",
-    "description": "A pioneering sci-fi RPG where Alis sets out to avenge her brother's death and overthrow the tyrannical King Lassic across three planets[citation:1][citation:4].",
+    "description": "A pioneering sci-fi RPG where Alis sets out to avenge her brother's death and overthrow the tyrannical King Lassic across three planets",
     "imgSrc": "images/covers/Phantasy Star.jpg",
     "stars": 5,
     "console": "Master System",
@@ -246,7 +246,7 @@
   {
     "id": 28,
     "title": "Sonic The Hedgehog",
-    "description": "The 8-bit debut of Sonic the Hedgehog, featuring unique level designs as he speeds through zones to stop Dr. Robotnik's plans[citation:6][citation:7].",
+    "description": "The 8-bit debut of Sonic the Hedgehog, featuring unique level designs as he speeds through zones to stop Dr. Robotnik's plans",
     "imgSrc": "images/covers/Sonic The Hedgehog.jpg",
     "stars": 4,
     "console": "Master System",
@@ -255,7 +255,7 @@
   {
     "id": 29,
     "title": "Sonic The Hedgehog 2",
-    "description": "A faster-paced sequel introducing Tails as a playable character, where Sonic races to stop Dr. Robotnik's latest scheme[citation:6].",
+    "description": "A faster-paced sequel introducing Tails as a playable character, where Sonic races to stop Dr. Robotnik's latest scheme",
     "imgSrc": "images/covers/Sonic The Hedgehog 2.jpg",
     "stars": 4,
     "console": "Master System",
@@ -264,7 +264,7 @@
   {
     "id": 30,
     "title": "Golden Axe Warrior",
-    "description": "An action RPG with top-down Zelda-style gameplay. Embark on a quest to defeat the evil Death Adder and recover the legendary Golden Axe[citation:1][citation:6].",
+    "description": "An action RPG with top-down Zelda-style gameplay. Embark on a quest to defeat the evil Death Adder and recover the legendary Golden Axe",
     "imgSrc": "images/covers/Golden Axe Warrior.jpg",
     "stars": 4,
     "console": "Master System",
@@ -273,7 +273,7 @@
   {
     "id": 32,
     "title": "Shinobi",
-    "description": "The 8-bit adaptation of the legendary ninja game. As Joe Musashi, rescue kidnapped children using shurikens and ninjutsu across varied missions[citation:1][citation:6].",
+    "description": "The 8-bit adaptation of the legendary ninja game. As Joe Musashi, rescue kidnapped children using shurikens and ninjutsu across varied missions",
     "imgSrc": "images/covers/Shinobi.jpg",
     "stars": 4,
     "console": "Master System",
@@ -282,10 +282,64 @@
   {
     "id": 33,
     "title": "Wonder Boy III: The Dragon's Trap",
-    "description": "An adventure where a hero cursed to live as a lizard-man must find a cure by exploring a vast world and defeating other cursed creatures[citation:1][citation:2].",
+    "description": "An adventure where a hero cursed to live as a lizard-man must find a cure by exploring a vast world and defeating other cursed creatures",
     "imgSrc": "images/covers/Wonder Boy.jpg",
     "stars": 5,
     "console": "Master System",
     "romURL": "https://playretrogames.online/game/play/play-wonder-boy-iii-the-dragons-trap/"
+  },
+  {
+    "id": 34,
+    "title": "Castle of Illusion Starring Mickey Mouse",
+    "description": "Mickey Mouse embarks on a magical journey through enchanted worlds to rescue Minnie Mouse from the evil witch Mizrabel in this beloved platformer.",
+    "imgSrc": "images/covers/Castle of Illusion.jpg",
+    "stars": 5,
+    "console": "Mega Drive",
+    "romURL": "https://playretrogames.online/game/play/play-castle-of-illusion-mickey-mouse/"
+  },
+  {
+    "id": 35,
+    "title": "Double Dragon II: The Revenge",
+    "description": "Billy and Jimmy Lee return in this classic beat 'em up sequel, seeking vengeance for the murder of Marian as they battle through the Shadow Warriors gang.",
+    "imgSrc": "images/covers/Double Dragon II.jpg",
+    "stars": 4,
+    "console": "Mega Drive",
+    "romURL": "https://playretrogames.online/game/play/double-dragon-ii/"
+  },
+  {
+    "id": 36,
+    "title": "Golden Axe II",
+    "description": "The barbarian warriors Ax Battler, Tyris Flare, and Gilius Thunderhead reunite to defeat the evil Dark Guld in this epic fantasy beat 'em up sequel.",
+    "imgSrc": "images/covers/Golden Axe II.jpg",
+    "stars": 4,
+    "console": "Mega Drive",
+    "romURL": "https://playretrogames.online/game/play/play-golden-axe-2/"
+  },
+  {
+    "id": 37,
+    "title": "Metal Slug",
+    "description": "The iconic run-and-gun arcade classic comes to Mega Drive with intense action, detailed pixel art, and cooperative gameplay against General Morden's army.",
+    "imgSrc": "images/covers/Metal Slug.jpg",
+    "stars": 5,
+    "console": "Mega Drive",
+    "romURL": "https://playretrogames.online/game/play/metal-slug/"
+  },
+  {
+    "id": 38,
+    "title": "Phantasy Star II",
+    "description": "In this epic sci-fi RPG sequel, Rolf and his companions investigate a failing planetary system while battling bio-monsters and uncovering a dark conspiracy.",
+    "imgSrc": "images/covers/Phantasy Star II.jpg",
+    "stars": 5,
+    "console": "Mega Drive",
+    "romURL": "https://playretrogames.online/game/play/play-phantasy-star-ii/"
+  },
+  {
+    "id": 39,
+    "title": "Sonic the Hedgehog 3",
+    "description": "Sonic teams up with Knuckles the Echidna in this acclaimed platformer featuring new power-ups, dynamic zones, and a memorable soundtrack.",
+    "imgSrc": "images/covers/Sonic The Hedgehog 3.jpg",
+    "stars": 5,
+    "console": "Mega Drive",
+    "romURL": "https://playretrogames.online/game/play/play-sonic-the-hedgehog-3/"
   }
 ]
