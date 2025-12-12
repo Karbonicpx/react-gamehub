@@ -9,7 +9,7 @@
 
 <p align="center">
   <strong>A modern, interactive retro game library built with React + TypeScript</strong><br>
-  Explore classic games with real-time filtering, animated transitions, and a sleek responsive design.
+  Explore classic games with real-time filtering, animated transitions, and a sleek responsive design. By clicking the cards, you acess the game in another tab
 </p>
 
 ## 📸 Screenshots
