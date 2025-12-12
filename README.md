@@ -9,7 +9,7 @@
 
 <p align="center">
   <strong>A modern, interactive retro game library built with React + TypeScript</strong><br>
-  Explore classic games with real-time filtering, animated transitions, and a sleek responsive design. By clicking the cards, you acess the game in another tab
+  Explore classic games with real-time filtering, animated transitions, and a sleek responsive design.
 </p>
 
 ## 📸 Screenshots
@@ -17,7 +17,7 @@
 ### Home Page (Desktop)
 <div align="center">
   <img width="800" src="https://github.com/user-attachments/assets/9f97aa57-cd78-4c3f-9c12-0dd5591f1b0d" alt="Desktop Homepage">
-  <p><em>Main game library with console filters and search bar</em></p>
+  <p><em>Main game library with console filters and search bar. By clicking the cards, you acess the game in another tab</em></p>
 </div>
 
 ### Home Page (Mobile)
